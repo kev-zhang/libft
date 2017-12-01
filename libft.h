@@ -6,7 +6,7 @@
 /*   By: pzhang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/27 10:49:22 by pzhang            #+#    #+#             */
-/*   Updated: 2017/11/30 22:46:13 by pzhang           ###   ########.fr       */
+/*   Updated: 2017/12/01 10:48:14 by pzhang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,11 @@ void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+void				ft_print_words_tables(char **tab);
+int					ft_fibonacci(int index);
+int					ft_factorial(int nb);
+int					ft_power(int nb, int power);
+int					ft_is_prime(int nb);
 
 #endif
